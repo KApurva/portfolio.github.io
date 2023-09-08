@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-...">
+        <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="d-flex justify-content-around align-items-center">
+            <div class="left">Apurva's Portfolio</div>
+            <div class="right">
+                <ul class="d-flex justify-content-around align-items-center">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#project">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="first d-flex justify-content-around align-items-center" id="home">
+            <div class="leftsection col-5">
+                Hi, My name is <span class="main-text">Apurva</span>
+                <div>and I am a Passionate</div>
+                <span id="element"></span>
+            </div>
+            <div class="rightsection col-5">
+                <img src="/img/right2.png" alt="">
+            </div>
+        </section>
+        <section class="second d-flex justify-content-around mt-5 mb-5" id="about">
+            <div class="leftsection col-4">
+
+            </div>
+            <div class="rightsection col-6">
+                <h1>About Me</h1>
+                <p class="p">I am a creative Frontend UI Developer with 1 year of experience in designing user friendly
+                    interfaces
+                    for web applications. Proficient in HTML, CSS,
+                    Angular, and Bootstrap, with a solid understanding of responsive design
+                    principles. Skilled in implementing designs by writing clean and efficient
+                    code that adheres to best practices.</p>
+                <div class="tab-titles d-flex">
+                    <p class="tab-links cursor active-links" onclick="openTab('skills')">Skills</p>
+                    <p class="tab-links cursor" onclick="openTab('exp')">Experience</p>
+                    <p class="tab-links cursor" onclick="openTab('edu')">Education</p>
+                </div>
+                <div class="tab-content active-tab" id="skills">
+                    <ul>
+                        <li><span class="s-title"><i class="fa-solid fa-code"></i>&nbsp;&nbsp; HTML</span><br>
+                            <span class="s-desc">Proficient in creating and structuring web content to optimize user
+                                experience.</span>
+                        </li>
+                        <li><span class="s-title"><i class="fa-brands fa-css3"></i>&nbsp;&nbsp; CSS</span><br>
+                            <span class="s-desc">Highly skilled in designing and styling web interfaces for aesthetic
+                                appeal and
+                                usability.</span>
+                        </li>
+                        <li><span class="s-title"><i class="fa-brands fa-square-js"></i>&nbsp;&nbsp;
+                                JavaScript</span><br>
+                            <span class="s-desc">Experienced in adding interactivity and functionality within web
+                                applications.</span>
+                        </li>
+                        <li><span class="s-title"><i class="fa-brands fa-angular"></i>&nbsp;&nbsp; Angular</span><br>
+                            <span class="s-desc"> Competent in developing dynamic, responsive, and scalable web
+                                applications utilizing the Angular framework.</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-content" id="exp">
+                    <ul>
+                        <li><span class="s-title">Datamatics Business Solution Ltd.</span><br>
+                            <p id="exp">October 2021 - Present</p>
+                            <span class="s-desc exp">
+                                <ul>
+                                    <li>Experience in a corporate environment as a frontend UI developer.</li>
+                                    <li>Learned and worked with Angular technology for designing web based applications.
+                                    </li>
+                                    <li>Designed and developed responsive websites using HTML, CSS and TypeScript.</li>
+                                    <li>Collaborated with developers to integrate front-end designs with back-end functionality</li>
+                                    <li>Implemented responsive design principles using Bootstrap to ensure cross-device compatibility and optimal user experience.</li>
+                                </ul>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-content" id="edu">
+                    <ul>
+                        <li><span class="s-title">2013</span><br>
+                            <span class="s-desc">SSC</span>
+                        </li>
+                        <li><span class="s-title">2015</span><br>
+                            <span class="s-desc">HSC</span>
+                        </li>
+                        <li><span class="s-title">2018</span><br>
+                            <span class="s-desc">BSc Computer science</span>
+                        </li>
+                        <li><span class="s-title">2022</span><br>
+                            <span class="s-desc">MSc Computer Science</span>
+                        </li>
+                        <li><span class="s-title">Present</span><br>
+                            <span class="s-desc">Master's In Full Stack Development</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Load library from the CDN -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Frontend Developer', 'UI Designer', 'Web Developer', 'Web Designer'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>

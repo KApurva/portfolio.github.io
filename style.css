@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+   background-color: #150033 !important;
+   color: white !important;
+}
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+.cursor{
+    cursor: pointer;
+}
+nav{
+    height: 4rem;
+    background-color: #240253;
+}
+nav ul{
+    margin: 0 !important;
+}
+nav ul li{
+    list-style: none;
+    margin: 0 2rem;
+}
+.left{
+    font-size: 1.5rem;
+}
+.first{
+    margin: 0 0 3rem;
+    height: 100vh;
+}
+header li a{
+    text-decoration: none;
+    color: white;
+}
+.main-text{
+    color: #ac71ff;
+}
+#element{
+    color: #ac71ff;
+}
+.first .leftsection{
+    font-size: 3rem;
+}
+.first .rightsection img{
+    height: 30rem;
+    width: 35rem;
+}
+.second{
+    width: 90%;
+    height: 80vh;
+}
+.second .leftsection img{
+    border-radius: 25rem;
+}
+.rightsection .p{
+    font-size: .85rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+.tab-titles{
+    gap: 4rem;
+    font-size: 1.1rem;
+}
+.tab-links{
+    position: relative;
+    font-weight: 600;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ac71ff;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: .5s;
+}
+.tab-links.active-links::after{
+    width: 70%;
+}
+.tab-content ul{
+    padding: 0 !important;
+}
+.tab-content ul li{
+    list-style: none;
+    margin: 2rem 0;
+}
+.tab-content .s-title{
+    color: #ac71ff;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.tab-content .s-desc{
+    font-size: .85rem;
+}
+.exp ul li{
+    list-style: circle;
+    margin: 1rem;
+}
+.tab-content{
+    display: none;
+}
+.tab-content.active-tab{
+    display: block;
+}
