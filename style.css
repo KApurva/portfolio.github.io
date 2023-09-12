@@ -22,6 +22,9 @@ nav{
 }
 nav ul{
     margin: 0 !important;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 nav ul li{
     list-style: none;
@@ -31,7 +34,7 @@ nav ul li{
     font-size: 1.5rem;
 }
 .first{
-    margin: 0 0 3rem;
+    padding: 0 0 3rem;
     height: 100vh;
 }
 header li a{
@@ -52,7 +55,13 @@ header li a{
     width: 35rem;
 }
 .second{
-    height: 80vh;
+    height: 100vh;
+}
+.third{
+    height: 100vh;
+}
+.fourth{
+    height: 100vh;
 }
 .second .leftsection img{
     border-radius: 25rem;
@@ -112,4 +121,222 @@ header li a{
 }
 .tab-content.active-tab{
     display: block;
+}
+.d-flex{
+    display: flex;
+}
+.justify-content-around{
+    justify-content: space-around;
+}
+.align-items-center{
+    align-items: center;
+}
+.margin{
+    padding: 4.5rem 0;
+}
+.col-3 {
+    flex: 0 0 auto;
+    width: 25%;
+}
+.col-8 {
+    flex: 0 0 auto;
+    width: 66.66666667%;
+}
+.text-center{
+    text-align: center;
+}
+h1{
+    font-size: 2.5rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+.services-list{
+    gap: 1rem;
+    padding: 2rem 0;
+}
+.services-list p{
+    margin: 1rem 0;
+    font-size: .85rem;
+}
+.services-list div{
+    background-color: #ac71ff52;
+    border-radius: 10px;
+    padding: 2rem;
+    transition: background .5s, transform .5s;
+}
+.services-list div:hover{
+    background: #ab6cf975;
+    transform: translateY(-10px);
+}
+.services-list a{
+    color: #ac6cf9;
+}
+.services-list i{
+    font-size: 3rem;
+}
+.services-list h2{
+    margin-top: 1rem;
+    font-size: 2rem;
+}
+.work-list {
+    gap: 1rem;
+    padding: 2rem 0;
+}
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.work img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform .5s;
+}
+.layer{
+    height: 0%;
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0,0.6), #7200ff);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 8rem;
+    gap: 1rem;
+    font-size: 14px;
+    transition: height .5s;
+}
+.layer a{
+    background-color: white;
+    color: #150033;
+    line-height: 60px;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    font-size: 18px;
+}
+.work:hover img{
+    transform: scale(1.1);
+}
+.work:hover .layer{
+    height: 100%;
+}
+.contact-left{
+    flex-basis: 35%;
+}
+.contact-right{
+    flex-basis: 60%;
+}
+.contact-left p{
+    margin-top: 1.5rem;
+    color: #f7f7f7;
+}
+.contact-left i{
+    margin-right: 1rem;
+}
+.social-icons{
+    margin-top: 1.5rem;
+}
+.social-icons a{
+    color: #f7f7f7;
+    display: inline-block;
+    font-size: 20px;
+    transition: transform .5s;
+}
+.social-icons a:hover{
+    transform: translateY(-5px);
+    color: #ac6cf9;
+}
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ac71ff;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: white;
+    transition: background .5s;
+    cursor: pointer;
+}
+.btn:hover{
+    background: #ac71ff;
+}
+.btn.btn2{
+    display: inline-block;
+    background: #ac71ff;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+.contact-right form{
+    width: 100%;
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #240253;
+    padding: 15px;
+    margin: 15px 0;
+    color: white;
+    font-size: 18px;
+    border-radius: 6px;
+}
+form .btn2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+}
+.ml-3{
+    margin-left: 3rem;
+}
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    background: #240253;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+nav .fa-solid{
+    display: none;
+}
+
+@media only screen and (max-width:600px){
+    nav{
+        justify-content: space-between !important;
+        padding: 0 1rem;
+    }
+    nav .fa-solid{
+        display: block;
+        font-size: 25px;
+    }
+    nav ul{
+        background: #ac71ff;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        flex-direction: column;
+        display: block;
+        z-index: 2;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fa-solid{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
 }
